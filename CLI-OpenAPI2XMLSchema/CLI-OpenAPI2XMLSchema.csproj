@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>CLI_OpenAPI2XMLSchema</RootNamespace>
+    <AssemblyName>openapi2xsd</AssemblyName>
+    <Version>0.0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenAPI2XMLSchema\OpenAPI2XMLSchema.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Tests\swagger.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
